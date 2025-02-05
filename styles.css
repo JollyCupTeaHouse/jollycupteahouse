@@ -16,6 +16,61 @@ body {
     text-decoration: none;
     color: inherit;
   }
+
+/* Default styles (for desktop) */
+body {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Responsive styles for smaller screens (phones) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Smaller font size for mobile */
+    padding: 10px; /* Less padding */
+  }
+
+  /* Adjust images */
+  img {
+    max-width: 100%; /* Makes images fit the screen */
+    height: auto;
+  }
+
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+  /* Stack navigation links for mobile */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+  /* Adjust button size */
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
   
   .btn {
     background: #ff6f61;
@@ -113,6 +168,15 @@ header {
     width: 100%;
     border-radius: 10px;
   }
+
+  .menu-items {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .menu-item {
+    width: 90%; /* Make menu items full width */
+  }
+}
 
   .menu-button {
     text-align: center;
